@@ -12,6 +12,8 @@
 
 ## ✨ What is A2A Gateway?
 
+![A2A 101 – How Agents Communicate](assets/A2A_101_-min.png)
+
 **A2A Gateway** is an open-source infrastructure that enables AI agents (Claude, GPT, local LLMs, etc.) to interoperate using the [A2A protocol by Google](https://google.github.io/A2A).
 
 Just as Hugging Face unified access to AI models, A2A Gateway aims to become the **standard for collaboration among agents** – public, federated, autonomous, and open.
