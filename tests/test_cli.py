@@ -9,4 +9,5 @@ def test_help_command():
 
 def test_invalid_command():
     result = subprocess.run(['python3', 'a2a_gateway_cli.py', 'invalid'], capture_output=True, text=True)
-    assert 'usage' in result.stdout.lower()
+    combined_output = result.stdout + result.stderr  # <--- corregge qui
+    assert 'usage' in combined_output.lower()
