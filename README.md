@@ -16,6 +16,17 @@
 
 Just as Hugging Face unified access to AI models, A2A Gateway aims to become the **standard for collaboration among agents** – public, federated, autonomous, and open.
 
+But it is more than just a protocol implementation.
+
+A2A Gateway is also a shared space — an open **agora** — for everyone interested in **agentic AI interoperability** to:
+
+- 💬 Discuss standards and best practices
+- 🤝 Cooperate on toolkits, adapters, and orchestrators
+- 🚀 Contribute agents, demos, ideas, and feedback
+- 🌱 Grow a federated ecosystem that is transparent, ethical, and developer-first
+
+If you're building, experimenting, or just curious — you're welcome in the conversation. Join us and shape the interoperable future of AI agents.
+
 ---
 
 ## 🚀 What You Can Do with A2A Gateway
