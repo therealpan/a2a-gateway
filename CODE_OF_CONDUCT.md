@@ -1,23 +1,33 @@
-# 📜 Codice di Condotta – A2A Gateway
+# Code of Conduct – A2A Gateway
 
-Tutti i partecipanti alla community A2A Gateway devono aderire al seguente codice di condotta. Vogliamo che questo sia uno spazio accogliente, collaborativo e rispettoso.
+All participants in the A2A Gateway community are expected to adhere to the following Code of Conduct.  
+We aim to make this a welcoming, collaborative, and respectful space for everyone.
 
-## Comportamenti attesi
+---
 
-- Sii gentile e rispettoso con gli altri
-- Usa un linguaggio inclusivo
-- Accetta critiche costruttive
-- Sii trasparente e collaborativo
+## ✅ Expected Behavior
 
-## Comportamenti inaccettabili
+- Be kind and respectful to others  
+- Use inclusive language  
+- Accept constructive feedback  
+- Be transparent and collaborative  
 
-- Discriminazione o linguaggio offensivo
-- Molestie personali o attacchi ad altri utenti
-- Condivisione di contenuti offensivi o illegali
-- Spam o comportamento distruttivo
+---
 
-## Applicazione
+## ❌ Unacceptable Behavior
 
-Le violazioni saranno affrontate dai maintainer. Per segnalare un comportamento scorretto, contattaci a info@innoturismo.com.
+- Discrimination or offensive language  
+- Harassment or personal attacks  
+- Sharing offensive or illegal content  
+- Spamming or intentionally disruptive behavior  
 
-Grazie per contribuire a una community sana 💙
+---
+
+## 🛠️ Enforcement
+
+Violations will be handled by the project maintainers.  
+To report inappropriate behavior, please reach out via our [Discord community](https://discord.gg/3wVy3qs2Zp).
+
+---
+
+Thank you for helping us build a healthy and positive community 💙

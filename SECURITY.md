@@ -1,21 +1,21 @@
-# 🔐 Security Policy
+# 🔐 Security Policy – A2A Gateway
 
-Grazie per voler contribuire alla sicurezza di **A2A Gateway**.
+Thank you for helping keep **A2A Gateway** secure.
 
-## Versioni supportate
+## Supported Versions
 
-| Versione | Supportata |
-|----------|-------------|
-| 0.1.x    | ✅           |
+| Version  | Supported |
+|----------|-----------|
+| 0.1.x    | ✅         |
 
-## Segnalazione di vulnerabilità
+## Reporting Vulnerabilities
 
-Se trovi una vulnerabilità, **non aprire una issue pubblica**.
+If you discover a vulnerability, **please do not open a public issue**.
 
-Invece, invia una segnalazione privata a:
+Instead, report it privately via our community:
 
-📧 info@innoturismo.com
+🔐 [Join our Discord](https://discord.gg/3wVy3qs2Zp)
 
-Ti risponderemo il prima possibile e lavoreremo per risolverla in modo sicuro.
+We will respond as quickly as possible and work to resolve the issue safely and responsibly.
 
-Grazie per aiutare a rendere A2A Gateway un progetto più sicuro 🙏
+Thank you for contributing to a safer A2A Gateway 🙏
