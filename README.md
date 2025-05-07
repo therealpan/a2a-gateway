@@ -1,9 +1,10 @@
 # 🌐 A2A Gateway – Interoperabilità tra agenti AI
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/therealpan/a2a-gateway?style=social&cacheSeconds=1)](https://github.com/therealpan/a2a-gateway)
+[![GitHub Stars](https://img.shields.io/github/stars/therealpan/a2a-gateway?style=social)](https://github.com/therealpan/a2a-gateway)
 [![Discord](https://img.shields.io/discord/1369570058430316575?label=Join%20us%20on%20Discord&logo=discord&color=5865F2)](https://discord.gg/3wVy3qs2Zp)
 [![Made with FastAPI](https://img.shields.io/badge/Built%20with-FastAPI-0f4c81?logo=fastapi)](https://fastapi.tiangolo.com/)
+[![CI](https://github.com/therealpan/a2a-gateway/actions/workflows/ci.yml/badge.svg)](https://github.com/therealpan/a2a-gateway/actions/workflows/ci.yml)
 
 > **Open-source gateway to make AI agents interoperable using Google's A2A protocol – like Hugging Face, but for agents.**
 
@@ -32,59 +33,120 @@ Come Hugging Face ha unificato l'accesso ai modelli AI, A2A Gateway mira a diven
 ### 🔧 Installa la CLI
 
 ```bash
-pip install a2a-gateway
+pip install .
 ```
 
 ### 🧪 Avvia un agente demo
 
 ```bash
-a2a run --agent demo-gpt
+python demo_agent.py
 ```
 
 ### 🚀 Pubblica il tuo agente
 
 ```bash
-a2a publish --file agent_card.json
+a2a-gateway publish --file agent_card.json
 ```
 
 ### 📬 Invia un task
 
 ```bash
-a2a task --to agent-weather --input "Previsioni per domani a Milano?"
+a2a-gateway task --to demo-gpt --input "Traduci: Ciao mondo"
 ```
 
 ---
 
 ## 📁 Esempi disponibili
 
-- [`agent-gpt-translator`](https://github.com/a2a-gateway/agent-gpt-translator)
-- [`agent-claude-summarizer`](https://github.com/a2a-gateway/agent-claude-summarizer)
-- [`agent-weather`](https://github.com/a2a-gateway/agent-weather)
-
-🔍 Trova altri agenti nel [Registry pubblico](https://a2a.dev/registry)
+- [`agent_card.json`](./agent_card.json) – card per agenti compatibili A2A
+- [`demo_agent.py`](./demo_agent.py) – micro agente FastAPI di test
+- [`examples/`](./examples/) – richieste A2A via `curl`, CLI e JSON
 
 ---
 
-## 🔧 Cosa include l'MVP
+## 🧾 Esempio di Agent Card
 
-- ✅ Gateway A2A: endpoint standard REST
-- ✅ Adapter GPT + Claude
-- ✅ CLI Python (`publish`, `task`, `status`)
-- ✅ Agent Card JSON + validation
-- ✅ Demo agenti funzionanti
-- 🔄 Registry (in beta)
-- 📊 Dashboard minimale (in sviluppo)
+```json
+{
+  "id": "demo-gpt",
+  "name": "Demo GPT Agent",
+  "description": "Un semplice agente GPT che traduce testi in inglese",
+  "type": "llm",
+  "entrypoint": "http://localhost:5001/execute",
+  "capabilities": ["translation", "chat"],
+  "language": "python",
+  "version": "0.1.0",
+  "author": "Innoturismo"
+}
+```
 
 ---
 
-## 🧭 Roadmap di sviluppo
+## 🤖 Avvia un agente di test
 
-| Fase     | Obiettivo                                                             |
-|----------|-----------------------------------------------------------------------|
-| **Fase 1** | Gateway A2A + Adapter GPT + Demo CLI                                |
-| **Fase 2** | Registry pubblico (Supabase), Task manager, CLI completa            |
-| **Fase 3** | Dashboard React, API key, monitoraggio task                         |
-| **Fase 4** | Governance, reputazione, federation tra gateway                     |
+```bash
+python demo_agent.py
+```
+
+L'agente risponde su `http://localhost:5001/execute` e simula una traduzione.
+Perfetto per testare `a2a-gateway publish` e `a2a-gateway task`.
+
+---
+
+## 📎 Esempi pratici
+
+La cartella [`examples/`](./examples/) include:
+
+- `task_via_curl.sh`: invia un task A2A via `curl`
+- `task_via_cli.sh`: invia un task A2A con la CLI
+- `task.json`: payload esempio per test o automazione
+
+---
+
+## 🧪 Test automatici
+
+Il progetto include test base in `tests/`:
+
+- `test_cli.py`: verifica CLI (`--help`, comandi)
+- `test_mocked.py`: test unitari mockati
+
+Per eseguirli:
+
+```bash
+pip install pytest
+pytest
+```
+
+---
+
+## 🧰 Dev Setup
+
+Per contribuire al progetto o lavorare in locale con test, linting e build:
+
+```bash
+pip install -r requirements-dev.txt
+```
+
+Oppure puoi usare:
+
+```bash
+make install
+make test
+make lint
+```
+
+Per lanciare l'agente demo localmente:
+
+```bash
+make agent
+```
+
+Per creare e pubblicare il pacchetto PyPI:
+
+```bash
+make build
+make publish
+```
 
 ---
 
@@ -94,19 +156,8 @@ Siamo all'inizio e il tuo contributo può fare la differenza 💡
 
 - ⭐ Fai una star al progetto
 - 🛠️ Contribuisci con un agente, una guida o fix
-- 🧠 Entra su [Discord](https://discord.gg/a2a) e proponi idee
+- 🧠 Entra su [Discord](https://discord.gg/3wVy3qs2Zp)
 - ✍️ Scrivi articoli o tutorial, li promuoviamo volentieri!
-
----
-
-## 🗺️ Strategia GitHub-first
-
-A2A Gateway è pensato per crescere open, come LangChain o Supabase:
-
-- 📚 Documentazione chiara, CLI pronta e agenti d'esempio
-- 📢 Post settimanali su Dev.to, X, Reddit, Medium
-- 💬 Discord e GitHub Discussions per supporto e collaborazione
-- 🏁 Mini hackathon, challenge e leaderboard pubblica
 
 ---
 
@@ -120,4 +171,4 @@ Distribuito sotto licenza **MIT**.
 
 ---
 
-📍 Seguici su [GitHub](https://github.com/a2a-gateway) | [a2a.dev](https://a2a.dev) | [Discord](https://discord.gg/a2a)
+📍 Seguici su [GitHub](https://github.com/therealpan/a2a-gateway) | [a2a.dev](https://a2a.dev) | [Discord](https://discord.gg/3wVy3qs2Zp)

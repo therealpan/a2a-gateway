@@ -1,0 +1,20 @@
+# pyproject.toml
+[project]
+name = "a2a-gateway"
+version = "0.1.0"
+description = "CLI tool to interact with A2A Gateway for interoperable AI agents"
+authors = [
+    { name = "Innoturismo", email = "info@innoturismo.com" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "requests"
+]
+
+[project.scripts]
+a2a-gateway = "a2a_gateway_cli:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

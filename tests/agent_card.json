@@ -1,0 +1,11 @@
+{
+  "id": "demo-gpt",
+  "name": "Demo GPT Agent",
+  "description": "Un semplice agente GPT che traduce testi in inglese",
+  "type": "llm",
+  "entrypoint": "http://localhost:5001/execute",
+  "capabilities": ["translation", "chat"],
+  "language": "python",
+  "version": "0.1.0",
+  "author": "Innoturismo"
+}
