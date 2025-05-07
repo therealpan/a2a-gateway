@@ -1,5 +1,3 @@
-![A2A Gateway](assets/A2A_102.png)
-
 # 🌐 A2A Gateway – Interoperability for AI Agents
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/therealpan/a2a-gateway?style=social)](https://github.com/therealpan/a2a-gateway)
@@ -8,14 +6,14 @@
 [![CI](https://github.com/therealpan/a2a-gateway/actions/workflows/ci.yml/badge.svg)](https://github.com/therealpan/a2a-gateway/actions/workflows/ci.yml)
 
 > **An open-source gateway to make AI agents interoperable using Google's A2A protocol – like Hugging Face, but for agents.**
-
+![A2A Gateway](/assets/A2A2.png)
 ---
 
 ## ✨ What is A2A Gateway?
 
-![A2A 101 – How Agents Communicate](assets/A2A_101_-min.png)
-
 **A2A Gateway** is an open-source infrastructure that enables AI agents (Claude, GPT, local LLMs, etc.) to interoperate using the [A2A protocol by Google](https://google.github.io/A2A).
+
+![How Agents Communicate](/assets/A2A1.png)
 
 Just as Hugging Face unified access to AI models, A2A Gateway aims to become the **standard for collaboration among agents** – public, federated, autonomous, and open.
 
@@ -43,6 +41,7 @@ If you're building, experimenting, or just curious — you're welcome in the con
 ---
 
 ## 🛠️ Quickstart
+
 
 ### 📚 Docs & Guides
 
