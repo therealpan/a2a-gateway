@@ -41,6 +41,25 @@ If you're building, experimenting, or just curious — you're welcome in the con
 
 ## 🛠️ Quickstart
 
+### 📚 Docs & Guides
+
+A2A Gateway is built to be developer-first, lightweight, and interoperable by design.  
+Whether you're building your first agent, federating across services, or integrating LangChain — we've got step-by-step guides to get you there fast.
+
+Explore the core documentation to get started:
+
+- 🛰️ **[How to Create Your First A2A Agent](docs/how_to_create_your_first_a2a_agent.md)**  
+  Build a working agent with FastAPI and expose it via A2A in 10 minutes.
+
+- 🤝 **[How to Federate with Other Agents](docs/how_to_federate_with_other_agents.md)**  
+  Discover, import, and route tasks across trusted agent networks.
+
+- 🔌 **[How to Publish a LangChain Adapter](docs/how_to_publish_langchain_adapter.md)**  
+  Wrap LangChain LLMs or chains and connect them to the A2A ecosystem.
+
+→ 📖 [View full documentation index](docs/docs_index.md)
+
+
 ### 🔧 Install the CLI
 
 ```bash
