@@ -1,0 +1,64 @@
+name: 🌍 List Your A2A Agent
+description: Help grow the A2A network by sharing your agent's info
+labels:
+  - directory
+  - a2a-agent
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 Let’s Build the A2A Agent Directory
+
+        If you've built (or are building) an A2A-compatible agent, fill in the details below and help us grow the interoperable agent ecosystem 🌐
+
+  - type: input
+    id: agent-id
+    attributes:
+      label: Agent ID
+      description: Your unique agent identifier (from agent_card.json)
+      placeholder: e.g. echo-agent
+    validations:
+      required: true
+
+  - type: input
+    id: repo-url
+    attributes:
+      label: GitHub Repo or URL
+      description: Where can we find your agent or its card?
+      placeholder: e.g. https://github.com/yourname/echo-agent
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What does your agent do?
+      placeholder: e.g. A simple echo agent that repeats input.
+    validations:
+      required: true
+
+  - type: input
+    id: built-with
+    attributes:
+      label: Tech Stack
+      placeholder: e.g. FastAPI, LangChain, Node.js
+    validations:
+      required: false
+
+  - type: dropdown
+    id: federation
+    attributes:
+      label: Federation-ready?
+      options:
+        - Yes
+        - Not yet
+    validations:
+      required: true
+
+  - type: input
+    id: card-url
+    attributes:
+      label: Agent Card URL (optional)
+      placeholder: e.g. https://yourdomain.com/agent_card.json
+    validations:
+      required: false
